@@ -94,6 +94,8 @@ const router = createRouter({
     document.getElementById('app').scrollIntoView();
   }
 });
+
+export router;
 ```
 
 ### Bootstrap installation
