@@ -71,17 +71,17 @@ const routes = [
   {
     path: '/',
     name: 'root',
-    component: () => import(/* webpackChunkName: 'index' */ './pages/index.vue')
+    component: () => import(/* webpackChunkName: 'index' */ './components/index.vue')
   },
   {
     path: '/list',
     name: 'list',
-    component: () => import(/* webpackChunkName: 'list' */ './pages/CountriesList.vue')
+    component: () => import(/* webpackChunkName: 'list' */ './components/CountriesList.vue')
     children: [
       {
         path: '/details',
         name: 'details',
-        component: () => import(/* webpackChunkName: 'details' */ './pages/CountriesDetails.vue')
+        component: () => import(/* webpackChunkName: 'details' */ './components/CountriesDetails.vue')
       },
     ]
   }
@@ -103,7 +103,7 @@ export default router;
 We will use [Bootstrap V4](https://getbootstrap.com/) for the design :+1:
 
 ```shell
-$ yarn install bootstrap
+$ npm install bootstrap
 ```
 
 To make the Bootstrap styles available in the entire app, import the stylesheet in `main.js`:
