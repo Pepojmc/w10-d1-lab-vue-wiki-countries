@@ -58,7 +58,7 @@ Clean the `App.vue` component so that it has the following structure inside the 
 Remember to install the vue Router:
 
 ```shell
-$ yarn install vue-router
+$ npm install vue-router
 ```
 
 And set up the router in your `src/router/index.js` file:
