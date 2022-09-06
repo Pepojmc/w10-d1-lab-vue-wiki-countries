@@ -19,8 +19,8 @@ After spending too much time on GitHub, you found a [JSON dataset of countries](
 
   ```bash
   $ cd lab-vue-wiki-countries
-  $ yarn install
-  $ yarn start
+  $ npm install
+  $ npm run dev
   ```
 
 
