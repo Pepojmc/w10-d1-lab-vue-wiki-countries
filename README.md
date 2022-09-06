@@ -61,7 +61,7 @@ Remember to install the vue Router:
 $ yarn install vue-router
 ```
 
-And set up the router in your `src/router.js` file:
+And set up the router in your `src/router/index.js` file:
 
 ```js
 // src/router.js
@@ -104,12 +104,18 @@ We will use [Bootstrap V4](https://getbootstrap.com/) for the design :+1:
 $ yarn install bootstrap
 ```
 
-To make the Bootstrap styles available in the entire app, import the stylesheet in `index.js`:
+To make the Bootstrap styles available in the entire app, import the stylesheet in `main.js`:
 
 ```javascript
-// src/main.js
+import { createApp } from 'vue'
+import App from './App.vue'
+
+import router from './router'
 
 import 'bootstrap/dist/css/bootstrap.css';
+
+createApp(App).use(router).mount('#app')
+
 ```
 
 ## Instructions
