@@ -71,17 +71,17 @@ const routes = [
   {
     path: '/',
     name: 'root',
-    component: () => import(/* webpackChunkName: 'index' */ './components/App.vue')
+    component: () => import(/* webpackChunkName: 'index' */ '../components/App.vue')
   },
   {
     path: '/list',
     name: 'list',
-    component: () => import(/* webpackChunkName: 'list' */ './components/CountriesList.vue'),
+    component: () => import(/* webpackChunkName: 'list' */ '../components/CountriesList.vue'),
     children: [
       {
         path: '/details',
         name: 'details',
-        component: () => import(/* webpackChunkName: 'details' */ './components/CountryDetails.vue')
+        component: () => import(/* webpackChunkName: 'details' */ '../components/CountryDetails.vue')
       },
     ]
   }
