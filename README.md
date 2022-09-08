@@ -71,7 +71,7 @@ const routes = [
   {
     path: '/',
     name: 'root',
-    component: () => import(/* webpackChunkName: 'index' */ './components/index.vue')
+    component: () => import(/* webpackChunkName: 'index' */ './components/App.vue')
   },
   {
     path: '/list',
@@ -81,7 +81,7 @@ const routes = [
       {
         path: '/details',
         name: 'details',
-        component: () => import(/* webpackChunkName: 'details' */ './components/CountriesDetails.vue')
+        component: () => import(/* webpackChunkName: 'details' */ './components/CountryDetails.vue')
       },
     ]
   }
@@ -169,7 +169,7 @@ Components rendered with Vue.js can read the query with `this.$route`. We can us
 
 ### Iteration 2 | Linking it all together
 
-Once done creating the components, the structure of elements that your `App.js` will render should look somewhat like this:
+Once done creating the components, the structure of elements that your `App.vue` will render should look somewhat like this:
 
 ```vue
 <div class="app">
