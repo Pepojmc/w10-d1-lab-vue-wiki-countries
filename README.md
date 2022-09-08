@@ -71,7 +71,7 @@ const routes = [
   {
     path: '/',
     name: 'root',
-    component: () => import(/* webpackChunkName: 'list' */ '../App.vue'),
+    component: () => import(/* webpackChunkName: 'list' */ '../CountriesList.vue'),
   },
   {
     path: '/details', // THEN, YOU WILL HAVE TO CHANGE THIS FOR A PARAM!
