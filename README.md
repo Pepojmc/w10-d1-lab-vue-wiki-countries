@@ -153,7 +153,7 @@ Now that our list of countries is ready, we should create the `CountryDetails` p
 ```vue
 <!-- Example -->
 
-<router-view>
+<router-view />
 ```
 
 Components rendered with Vue.js can read the query with `this.$route`. We can use this to obtain the information coming from the browser's URL bar, for example, the `alpha3Code` code of the country.
@@ -178,7 +178,7 @@ Once done creating the components, the structure of elements that your `App.vue`
   <div className="container">
     <div className="row">
       <CountriesList :countries="countries" />
-      <router-view>
+      <router-view />
     </div>
   </div>
 </div>
