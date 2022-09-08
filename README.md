@@ -183,6 +183,10 @@ Once done creating the components, the structure of elements that your `App.vue`
 
 Our `App.vue` application should pull `countries` into the vue data method, holding the data coming from the `src/countries.json` file.
 
+To import countries.json in App.vue, you can use:
+
+`import countries from "./countries.json";`
+
 ----
 
 ### Iteration 4 | Bonus | Fetch countries data from an API
