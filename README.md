@@ -100,7 +100,7 @@ export default router;
 
 ### Bootstrap installation
 
-We will use [Bootstrap V4](https://getbootstrap.com/) for the design :+1:
+We will use Bootstrap(https://getbootstrap.com/) for the design :+1:
 
 ```shell
 $ npm install bootstrap
