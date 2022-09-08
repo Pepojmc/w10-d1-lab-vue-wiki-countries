@@ -186,6 +186,14 @@ Our `App.vue` application should pull `countries` into the vue data method, hold
 To import countries.json in App.vue, you can use:
 
 `import countries from "./countries.json";`
+and then in your `data`:
+
+`
+data() {
+  return {
+    countries: countries
+  }
+}`
 
 ----
 
