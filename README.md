@@ -64,7 +64,7 @@ $ npm install vue-router
 And set up the router in your `src/router/index.js` file:
 
 ```js
-// src/router.js
+// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
