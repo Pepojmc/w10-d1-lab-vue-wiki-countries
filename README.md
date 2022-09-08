@@ -76,7 +76,7 @@ const routes = [
   {
     path: '/list',
     name: 'list',
-    component: () => import(/* webpackChunkName: 'list' */ './components/CountriesList.vue')
+    component: () => import(/* webpackChunkName: 'list' */ './components/CountriesList.vue'),
     children: [
       {
         path: '/details',
